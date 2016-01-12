@@ -1,0 +1,7 @@
+<h2><%= @song.title %></h2>
+<h3><%= @song.artist %></h3>
+<p><%= @song.description %></p>
+
+<%= link_to "Back", root_path %>
+<%= link_to "Edit", edit_song_path(@song) %>
+<%= link_to "Remove", song_path(@song), method: :delete, data: { confirm: "Are you sure?"} %>
